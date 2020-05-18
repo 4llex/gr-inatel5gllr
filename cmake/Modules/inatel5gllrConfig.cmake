@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_INATEL5GLLR inatel5gllr)
+
+FIND_PATH(
+    INATEL5GLLR_INCLUDE_DIRS
+    NAMES inatel5gllr/api.h
+    HINTS $ENV{INATEL5GLLR_DIR}/include
+        ${PC_INATEL5GLLR_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    INATEL5GLLR_LIBRARIES
+    NAMES gnuradio-inatel5gllr
+    HINTS $ENV{INATEL5GLLR_DIR}/lib
+        ${PC_INATEL5GLLR_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(INATEL5GLLR DEFAULT_MSG INATEL5GLLR_LIBRARIES INATEL5GLLR_INCLUDE_DIRS)
+MARK_AS_ADVANCED(INATEL5GLLR_LIBRARIES INATEL5GLLR_INCLUDE_DIRS)
+

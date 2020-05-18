@@ -1,0 +1,23 @@
+Start testing: Feb 03 09:40 -03
+----------------------------------------------------------
+1/1 Testing: qa_qam_demod_top
+1/1 Test: qa_qam_demod_top
+Command: "/bin/sh" "/home/alexrosa/Documentos/GNURADIO/5gIoT/gr-inatel5gllr/build/python/qa_qam_demod_top_test.sh"
+Directory: /home/alexrosa/Documentos/GNURADIO/5gIoT/gr-inatel5gllr/build/python
+"qa_qam_demod_top" start time: Feb 03 09:40 -03
+Output:
+----------------------------------------------------------
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.004s
+
+OK
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"qa_qam_demod_top" end time: Feb 03 09:40 -03
+"qa_qam_demod_top" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 03 09:40 -03

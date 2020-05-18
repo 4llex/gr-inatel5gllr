@@ -1,0 +1,18 @@
+<testsuite errors="1" failures="0" name="unittest.suite.TestSuite" tests="1" time="0.002">
+  <testcase classname="__main__.qa_qam_demod_top" name="test_001_t" time="0.0014">
+    <error type="exceptions.RuntimeError">qam_demod_top(2): insufficient connected output ports (2 needed, 1 connected)
+  File "/usr/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "qa_qam_demod_top.py", line 48, in test_001_t
+    self.tb.run ()
+  File "/usr/lib/python2.7/dist-packages/gnuradio/gr/top_block.py", line 121, in run
+    self.start(max_noutput_items)
+  File "/usr/lib/python2.7/dist-packages/gnuradio/gr/top_block.py", line 109, in start
+    top_block_start_unlocked(self._impl, max_noutput_items)
+  File "/usr/lib/python2.7/dist-packages/gnuradio/gr/runtime_swig.py", line 5678, in top_block_start_unlocked
+    return _runtime_swig.top_block_start_unlocked(r, max_noutput_items)
+    </error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
